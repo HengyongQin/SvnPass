@@ -1,0 +1,16 @@
+.span-label{
+    font-size: 12px;
+    width: 40px;
+    text-align: left;
+}
+
+.span-value{
+    font-size: 12px;
+    width: 50px;
+    text-align: left;
+}
+
+.items {
+    width: 200px;
+    padding: 10px 5px;
+}

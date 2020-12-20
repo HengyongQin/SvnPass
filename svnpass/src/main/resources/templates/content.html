@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/login.css" />
+	<link rel="stylesheet" href="css/content.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+<div class="page">
+	<div class="loginwarrp">
+		<div class="logo">管理员登陆</div>
+		<div>
+			<li class="items">
+				<span class="span-label">服务端口：  </span>
+				<span class="span-value" th:text="${servicePort}"/>
+			</li>
+			<li class="items">
+				<span class="span-label">加密：  </span>
+				<span class="span-value" th:text="${encryption}"></span>
+			</li>
+			<li class="items">
+				<span class="span-label">协议:  </span>
+				<span class="span-value" th:text="${protocol}"></span>
+			</li>
+			<li class="items">
+				<span class="span-label">混淆:  </span>
+				<span class="span-value" th:text="${confuse}"></span>
+			</li>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	window.onload = function() {
+		var config = {
+			vx : 4,
+			vy : 4,
+			height : 2,
+			width : 2,
+			count : 100,
+			color : "121, 162, 185",
+			stroke : "100, 200, 180",
+			dist : 6000,
+			e_dist : 20000,
+			max_conn : 10
+		}
+		CanvasParticle(config);
+	}
+</script>
+<script type="text/javascript" src="js/canvas-particle.js"></script>
+</body>
+</html>
